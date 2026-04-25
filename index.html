@@ -3,19 +3,192 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PupuBadge Legal</title>
+  <title>PupuBadge - Timbrature semplici e veloci</title>
+  <meta name="description" content="PupuBadge è l'app iOS per registrare entrate e uscite, monitorare le ore lavorate e generare report PDF/CSV in modo semplice." />
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 40px auto; max-width: 760px; padding: 0 16px; line-height: 1.55; color: #111; }
-    h1 { margin-bottom: 8px; }
-    ul { padding-left: 20px; }
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --brand: #1f5cae;
+      --brand-soft: #e8f0ff;
+      --line: #dbe2ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--brand);
+    }
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 14px;
+    }
+    .hero {
+      background: linear-gradient(140deg, #ffffff, #edf3ff);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 28px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      max-width: 700px;
+      font-size: 17px;
+    }
+    .cta-row {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--brand-soft);
+      border-color: #bfd2ff;
+      color: var(--brand);
+    }
+    .section {
+      margin-top: 22px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 22px;
+    }
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .tile {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: #fff;
+    }
+    .tile h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .tile p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    footer {
+      margin-top: 22px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>PupuBadge - Legal</h1>
-  <p>Documenti pubblici per App Store:</p>
-  <ul>
-    <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-    <li><a href="./support.html">Supporto</a></li>
-  </ul>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">PupuBadge</div>
+      <nav class="links">
+        <a href="./privacy-policy.html">Privacy Policy</a>
+        <a href="./support.html">Supporto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Timbra in pochi secondi, ogni giorno.</h1>
+      <p class="subtitle">
+        PupuBadge è l'app iOS per registrare entrate e uscite, monitorare ore lavorate e generare report PDF/CSV in modo semplice e affidabile.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="./support.html">Contatta il supporto</a>
+        <a class="btn btn-secondary" href="./privacy-policy.html">Leggi la Privacy Policy</a>
+      </div>
+      <p class="muted">Disponibile per iPhone. App pensata per un uso rapido e quotidiano.</p>
+    </section>
+
+    <section class="section">
+      <h2>Funzioni principali</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>Timbratura rapida</h3>
+          <p>Registra entrata e uscita con un flusso diretto dalla Home.</p>
+        </article>
+        <article class="tile">
+          <h3>Report mensili</h3>
+          <p>Esporta riepiloghi in PDF e CSV, pronti da condividere.</p>
+        </article>
+        <article class="tile">
+          <h3>Gestione giornate</h3>
+          <p>Supporto ferie, malattia e regole per giorni lavorativi.</p>
+        </article>
+        <article class="tile">
+          <h3>Notifiche locali</h3>
+          <p>Promemoria configurabili, senza tracking pubblicitario.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Informazioni legali</h2>
+      <p class="muted">
+        Documenti ufficiali per utenti e App Store:
+        <a href="./privacy-policy.html">Privacy Policy</a> ·
+        <a href="./support.html">Supporto</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 PupuBadge · amarildo.gjana01@gmail.com
+    </footer>
+  </div>
 </body>
 </html>
